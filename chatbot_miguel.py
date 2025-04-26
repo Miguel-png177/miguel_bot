@@ -4,7 +4,7 @@ import os
 from telegram import Update, ReplyKeyboardMarkup, InputFile
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 
-TELEGRAM_TOKEN = ''
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 WALKS = [
     "https://youtu.be/nd7YW_D76wc",
